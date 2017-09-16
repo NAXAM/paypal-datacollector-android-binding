@@ -3,16 +3,17 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Paypal.DataCollector</id>
-        <version>2.5.3</version>
-        <description>Xamarin Binding Library - Paypal DataCollector</description>
-        <authors>Vu Duc Tuyen</authors>
+        <version>2.6.2</version>
+        <description>Xamarin Android Binding Library - Paypal DataCollector</description>
+        <authors>NAXAM CO.,LTD</authors>
         <owners>NAXAM CO.,LTD</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <title>Naxam - Paypal DataCollector</title>
-        <releaseNotes>Paypal DataCollector v2.5.3</releaseNotes>
-        <summary>Xamarin Binding Library - Paypal DataCollector</summary>
+        <title>Naxam - Paypal DataCollector for Android</title>
+        <releaseNotes>Paypal DataCollector v2.6.2</releaseNotes>
+        <summary>Xamarin Android Binding Library - Paypal DataCollector</summary>
+        <iconUrl>https://avatars3.githubusercontent.com/u/3453</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
-        <projectUrl>https://github.com/NAXAM/xand-paypal-datacollector</projectUrl>
+        <projectUrl>https://github.com/NAXAM/paypal-datacollector-android-binding</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
         <tags>Xamarin.Android, paypal, datacollector, data-collector</tags>
     </metadata>
