@@ -54,7 +54,7 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\data-collector-2.8.1.jar" />
+    <EmbeddedJar Include="Jars\data-collector.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>
