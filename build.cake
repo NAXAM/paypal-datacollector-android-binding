@@ -11,6 +11,7 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var VERSION = "2.10.0";
+var NUGET_SUFIX = ".1";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -21,7 +22,7 @@ var artifacts = new [] {
         SolutionPath = "./paypal-datacollector.sln",
         AssemblyInfoPath = "./Naxam.Paypal.DataCollector/Properties/AssemblyInfo.cs",
         NuspecPath = "./datacollector.nuspec",
-        DownloadUrl = "http://central.maven.org/maven2/com/braintreepayments/api/data-collector/{0}/data-collector-{0}.jar",
+        DownloadUrl = "http://central.maven.org/maven2/com/paypal/android/sdk/data-collector/{0}/data-collector-{0}.jar",
         JarPath = "./Naxam.Paypal.DataCollector/Jars/data-collector.jar"
     },
 };
@@ -88,7 +89,10 @@ Task("Pack")
 {
     foreach(var artifact in artifacts) {
         NuGetPack(artifact.NuspecPath, new NuGetPackSettings {
-            Version = VERSION
+            Version = VERSION + NUGET_SUFIX,
+            ReleaseNotes = new [] {
+                $"Paypal DataCollector v{VERSION}"
+            }
         });
     }
 });
